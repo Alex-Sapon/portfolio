@@ -1,0 +1,87 @@
+// Миксины ===========================================================================
+@import 'mixins';
+
+// Шрифты ============================================================================
+@import 'fonts';
+
+// Animations ============================================================================
+// @import 'animations';
+// @import 'animate';
+
+// Шрифты ============================================================================
+$fontFamily: 'Poppins', sans-serif;
+$fontSize: 10px;
+
+// Иконочные шрифты ==================================================================
+@import 'icons';
+
+// Переменные ========================================================================
+$minWidth: 320px;
+$maxWidth: 1920px;
+$maxWidthContainer: 1140px + 30px;
+$md1: $maxWidthContainer;
+$md2: 991.98px;
+$md3: 767.98px;
+$md4: 479.98px;
+
+$mainColor: #000000;
+$secondColor: #FFA501;
+
+// Обнуление, общие параметры ========================================================
+@import 'null';
+*:last-child {
+    margin-bottom: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: $fontSize;
+}
+
+body {
+    color: $mainColor;
+    font-family: $fontFamily;
+}
+
+// .btn {
+//     font-weight: 500;
+//     font-size: 16px;
+//     text-align: center;
+//     text-transform: uppercase;
+//     color: #FFFFFF;
+//     background-color: $secondColor;
+//     border-radius: 5px;
+//     transition: all 0.5s ease;
+//         &:hover {
+//             color: $secondColor;
+//             background-color: #FFFFFF;
+//         }
+//     &_border {
+//         &:hover {
+//             border: 1px solid $secondColor;
+//         }
+//     }
+// }
+
+// .title {
+//     font-weight: 700;
+//     font-size: 30px;
+//     text-align: center;
+//     color: #0D0D0D;
+//     text-transform: uppercase;
+// }
+
+// Основная сетка ====================================================================
+.container {
+    max-width: $maxWidthContainer;
+    padding: 0px 15px;
+    margin: 0 auto;
+}
+
+// Blocks ============================================================================
+@import 'blocks/header';
+@import 'blocks/promo';
+// @import 'slider';
+@import 'blocks/footer';
+// @import 'modal';
+// @import 'pageup';
