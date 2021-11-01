@@ -1,0 +1,62 @@
+.promo {
+    position: relative;
+    height: 100vh;
+    background: url(../img/bg.jpg) 50% / cover no-repeat;
+    padding-top: 205px;
+
+    &__wrapper {
+        max-width: 530px;
+    }
+
+    &__title {
+        margin-top: 9px;
+    }
+
+    &__btns {
+        margin-top: 25px;
+    }
+
+    &__btn-bg {
+        margin-right: 42px;
+    }
+
+    &__btn-tr {
+        color: inherit;
+        font-weight: 700;
+        font-size: 1.4rem;
+        line-height: 2.1rem;
+    }
+}
+
+.sidebar {
+    position: absolute;
+    top: 224px;
+    left: 39px;
+    writing-mode: vertical-rl;
+    text-align: center;
+    height: 370px;
+    &:not(:last-child) > * {
+        margin-top: 15px;
+    }
+
+    &__link {
+        font-size: 20px;
+        color: $mainColor;
+        transform: rotate(-90deg);
+        display: inline-block;
+        transition: all 0.5s ease;
+    }
+
+    &__divider {
+        width: 2px;
+        height: 70px;
+        background-color: $mainColor;
+        transform: rotate(-180deg);
+        display: inline-block;
+    }
+
+    &__title {
+        transform: rotate(-180deg);
+        display: inline-block;
+    }
+}

@@ -8,3 +8,18 @@
         font-style: #{$style};
     }
 }
+
+@mixin circle {
+    &:before {
+        content: '';
+        display: block;
+        position: absolute;
+        width: 36px;
+        height: 36px;
+        top: -30%;
+        left: 0;
+        z-index: -1;
+        border-radius: 100%;
+        background: $secondColor;
+    }
+}
