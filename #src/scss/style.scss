@@ -1,14 +1,12 @@
 // Миксины ===========================================================================
 @import 'mixins';
 
-// Шрифты ============================================================================
-@import 'fonts';
-
 // Animations ============================================================================
 // @import 'animations';
 // @import 'animate';
 
 // Шрифты ============================================================================
+@import 'fonts';
 $fontFamily: 'Poppins', sans-serif;
 $fontSize: 10px;
 
@@ -43,39 +41,62 @@ body {
     font-family: $fontFamily;
 }
 
-// .btn {
-//     font-weight: 500;
-//     font-size: 16px;
-//     text-align: center;
-//     text-transform: uppercase;
-//     color: #FFFFFF;
-//     background-color: $secondColor;
-//     border-radius: 5px;
-//     transition: all 0.5s ease;
-//         &:hover {
-//             color: $secondColor;
-//             background-color: #FFFFFF;
-//         }
-//     &_border {
-//         &:hover {
-//             border: 1px solid $secondColor;
-//         }
-//     }
-// }
-
-// .title {
-//     font-weight: 700;
-//     font-size: 30px;
-//     text-align: center;
-//     color: #0D0D0D;
-//     text-transform: uppercase;
-// }
-
 // Основная сетка ====================================================================
 .container {
     max-width: $maxWidthContainer;
     padding: 0px 15px;
     margin: 0 auto;
+}
+
+// Titles, buttons ===================================================================
+.btn {
+    font-weight: 700;
+    font-size: 1.4rem;
+    text-align: center;
+    padding: 12px 26px;
+    display: inline-block;
+    color: inherit;
+    background-color: $secondColor;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    transition: all 0.5s ease;
+        &:hover {
+            background-color: $mainColor;
+            color:$secondColor;
+            box-shadow: none;
+        }
+}
+
+.title {
+    font-weight: 700;
+    color: $mainColor;
+    &_fs48 {
+        font-size: 4.8rem;
+        line-height: 6.0rem;
+    }
+    &_fs36 {
+        font-size: 3.6rem;
+        line-height: 6.0rem;
+    }
+    &_fs20 {
+        font-size: 2.0rem;
+        line-height: 3.0rem;
+    }
+    &_fs16 {
+        font-size: 1.6rem;
+        line-height: 2.4rem;
+    }
+    &_fs14 {
+        font-size: 1.4rem;
+        line-height: 2.1rem;
+    }
+}
+
+.subtitle_circle,
+.title_circle {
+    padding-left: 13px;
+    position: relative;
+    z-index: 5;
+    @include circle;
 }
 
 // Blocks ============================================================================
