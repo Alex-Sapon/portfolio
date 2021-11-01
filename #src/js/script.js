@@ -145,3 +145,17 @@ $(document).ready(function(){
     new WOW().init();
 });
 
+
+// Menu-burger
+const hamburger = document.querySelector('.hamburger'),
+      menu = document.querySelector('.menu'),
+      closeArrow = document.querySelector('.menu__close');
+
+hamburger.addEventListener('click', () => {
+    menu.classList.add('active');
+});
+
+closeArrow.addEventListener('click', () => {
+    menu.classList.remove('active');
+});
+

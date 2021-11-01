@@ -15,4 +15,4 @@ Blocks
 - contacts
 
 Elements
-- skills-list
+- skills-items
