@@ -79,9 +79,15 @@ body {
 }
 
 // Blocks ============================================================================
-@import 'blocks/header';
+// @import 'blocks/header';
 @import 'blocks/promo';
+@import 'blocks/about-me';
+@import 'blocks/experience';
+@import 'blocks/skills';
+@import 'blocks/portfolio';
+@import 'blocks/price';
+@import 'blocks/contacts';
 // @import 'slider';
-@import 'blocks/footer';
+// @import 'blocks/footer';
 // @import 'modal';
 // @import 'pageup';
