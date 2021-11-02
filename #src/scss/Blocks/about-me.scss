@@ -1,0 +1,70 @@
+.about-me {
+    padding: 120px 0px;
+    &__wrapper {
+        display: flex;
+    }
+
+    &__image {
+        margin-right: 70px;
+        flex: 0 0 35%;
+        img {
+            object-fit: contain;
+            width: 100%;
+        }
+    }
+    &__block {
+        margin-bottom: 40px;
+    }
+    &__subtitle {
+        margin-top: 7px;
+    }
+    &__title {
+        margin: 8px 0px;
+    }
+    &__text {
+        margin-top: 20px;
+        font-weight: 500;
+        font-size: 1.4rem;
+        line-height: 2.1rem;
+    }
+    &__block-skills {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    &__skill {
+        flex: 0 0 300px;
+        margin-bottom: 20px;
+    }
+    .icon-mobile,
+    .icon-design,
+    .icon-developer {
+        font-size: 26px;
+        padding: 15px 0px 0px 15px;
+    }
+}
+.divider {
+    width: 60px;
+    height: 3px;
+    background-color: $secondColor;
+}
+.skill-about-me {
+    display: flex;
+    justify-content: space-between;
+    &__wrapper {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        @include circleForImg;
+    }
+    span {
+        position: relative;
+        margin-right: 20px;
+    }
+    &__text {
+        font-weight: 500;
+        font-size: 1.2rem;
+        line-height: 1.8rem;
+        margin-top: 6px;
+    }
+}

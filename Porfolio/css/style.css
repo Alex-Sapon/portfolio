@@ -230,7 +230,7 @@ body {
 
 .title_fs36 {
   font-size: 3.6rem;
-  line-height: 6rem;
+  line-height: 4rem;
 }
 
 .title_fs20 {
@@ -502,6 +502,124 @@ body {
   left: 0;
   top: 0;
   opacity: 0.75;
+}
+
+.about-me {
+  padding: 120px 0px;
+}
+
+.about-me__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.about-me__image {
+  margin-right: 70px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 35%;
+          flex: 0 0 35%;
+}
+
+.about-me__image img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 100%;
+}
+
+.about-me__block {
+  margin-bottom: 40px;
+}
+
+.about-me__subtitle {
+  margin-top: 7px;
+}
+
+.about-me__title {
+  margin: 8px 0px;
+}
+
+.about-me__text {
+  margin-top: 20px;
+  font-weight: 500;
+  font-size: 1.4rem;
+  line-height: 2.1rem;
+}
+
+.about-me__block-skills {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.about-me__skill {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 300px;
+          flex: 0 0 300px;
+  margin-bottom: 20px;
+}
+
+.about-me .icon-mobile,
+.about-me .icon-design,
+.about-me .icon-developer {
+  font-size: 26px;
+  padding: 15px 0px 0px 15px;
+}
+
+.divider {
+  width: 60px;
+  height: 3px;
+  background-color: #FFA501;
+}
+
+.skill-about-me {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.skill-about-me__wrapper {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.skill-about-me__wrapper:before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 36px;
+  height: 36px;
+  top: 0;
+  left: -59px;
+  z-index: -1;
+  border-radius: 100%;
+  background: #FFA501;
+}
+
+.skill-about-me span {
+  position: relative;
+  margin-right: 20px;
+}
+
+.skill-about-me__text {
+  font-weight: 500;
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+  margin-top: 6px;
 }
 @supports (-webkit-appearance:none){
 .promo{background:url(../img/bg.jpg) 50%/cover no-repeat}
