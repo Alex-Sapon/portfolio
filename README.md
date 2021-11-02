@@ -13,6 +13,3 @@ Blocks
 - portfolio
 - price
 - contacts
-
-Elements
-- skills-items
