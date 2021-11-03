@@ -159,3 +159,10 @@ closeArrow.addEventListener('click', () => {
     menu.classList.remove('active');
 });
 
+// Counters
+const counters = document.querySelectorAll('.skills__level-percent');
+const lines = document.querySelectorAll('.skills__level-progress-line');
+
+counters.forEach((item, i) => {
+    lines[i].style.width = item.innerHTML;
+});
