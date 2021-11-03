@@ -11,7 +11,6 @@
             transform: translate(-50%, -50%);
         }
     }
-
     &__subtitle {
         text-align: center;
         margin-bottom: 25px;
@@ -22,13 +21,6 @@
         column-gap: 135px;
         padding: 60px 65px 0 65px;
     }
-
-    &__col {
-    }
-
-    &__item {
-    }
-
     &__item-title {
         position: relative;
         padding-left: 50px;
@@ -45,7 +37,6 @@
             background-color: $secondColor;
         }
     }
-
     &__item-aducation {
         position: relative;
         display: grid;
@@ -62,11 +53,8 @@
             top: -7.5px;
             left: 7px;
             background-color: $mainColor;
-
-
         }
     }
-
     &__item-image {
         position: relative;
         @include circle;
@@ -78,7 +66,6 @@
             padding: 16px 0 0 16px;
         }
     }
-
     &__item-address {
         position: relative;
         &::before {
@@ -91,20 +78,16 @@
             left: -98px;
             background-color: $mainColor;
         }
-        
     }
-
     &__item-address-title {
         font-weight: 700;
         font-size: 1.4rem;
         line-height: 1.7rem;
     }
-
     &__item-subtitle {
         font-size: 1.2rem;
         line-height: 1.8rem;
-            }
-
+    }
     &__item-text {
         font-size: 1.2rem;
         line-height: 1.8rem;
