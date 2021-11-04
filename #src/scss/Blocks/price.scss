@@ -30,7 +30,7 @@
     }
     &__item {
         display: grid;
-        grid-template-columns: 25px 1fr 100px;
+        grid-template-columns: 25px auto auto;
         grid-auto-rows: auto;
         row-gap: 5px;
     }
@@ -58,7 +58,7 @@
         align-items: center;
     }
     &__cost {
-        justify-self: flex-end;
+        justify-self: end;
     }
 
     &__text {
