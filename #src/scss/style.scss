@@ -3,7 +3,7 @@
 
 // Animations ============================================================================
 // @import 'animations';
-// @import 'animate';
+@import 'animate';
 
 // Шрифты ============================================================================
 @import 'fonts';
@@ -30,7 +30,6 @@ $secondColor: #FFA501;
 *:last-child {
     margin-bottom: 0;
 }
-
 
 html {
     scroll-behavior: smooth;
@@ -73,10 +72,25 @@ body {
     &_fs48 {
         font-size: 4.8rem;
         line-height: 6.0rem;
+        @media (max-width:$md3) {
+            font-size: 3.6rem;
+            line-height: 3.9rem;
+        }
+        @media (max-width:$md4) {
+            font-size: 2.6rem;
+            line-height: 3.9rem;
+        }
     }
     &_fs36 {
         font-size: 3.6rem;
         line-height: 4.0rem;
+        @media (max-width:$md3 + 12px) {
+            font-size: 2.6rem;
+            line-height: 3.6rem;
+        }
+        @media (max-width:$md3 + 12px) {
+            font-size: 2.4rem;
+        }
     }
     &_fs20 {
         font-size: 2.0rem;
@@ -114,4 +128,4 @@ body {
 // @import 'slider';
 // @import 'blocks/footer';
 // @import 'modal';
-// @import 'pageup';
+@import 'pageup';

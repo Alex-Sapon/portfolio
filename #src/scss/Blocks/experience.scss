@@ -1,5 +1,11 @@
 .experience {
     padding-top: 120px;
+    @media (max-width:$md3) {
+        padding-top: 80px;
+    }
+    @media (max-width:$md4) {
+        padding-top: 40px;
+    }
     &__title {
         position: relative;
         text-align: center;
@@ -17,9 +23,17 @@
     }
     &__wrapper {
         display: grid;
-        grid-template-columns: 415px 415px;
+        grid-template-columns: repeat(2, minmax(300px, 1fr));
         column-gap: 135px;
         padding: 60px 65px 0 65px;
+        @media (max-width:$md1) {
+            column-gap: 80px;
+        }
+        @media (max-width:$md3) {
+            grid-template-columns: 1fr;
+            column-gap: unset;
+            padding: 40px 0px 0px 0px;
+        }
     }
     &__item-title {
         position: relative;
@@ -96,5 +110,12 @@
     }
     .divider {
         margin: 0 auto;
+    }
+    &__col {
+        @media (max-width:$md3) {
+            &:not(:last-child) {
+                margin-bottom: 40px;
+            }
+        }
     }
 }

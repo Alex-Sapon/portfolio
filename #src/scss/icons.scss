@@ -2,9 +2,9 @@
     font-family: 'icons';
     src:  url('../fonts/icons.eot?iz9tlb');
     src:  url('../fonts/icons.eot?iz9tlb#iefix') format('embedded-opentype'),
-      url('../fonts/icons.ttf?iz9tlb') format('truetype'),
       url('../fonts/icons.woff?iz9tlb') format('woff'),
       url('../fonts/icons.svg?iz9tlb#icons') format('svg');
+    // src:  url('../fonts/icons.ttf?iz9tlb') format('truetype');
     font-weight: normal;
     font-style: normal;
     font-display: block;
@@ -12,7 +12,7 @@
   
   [class^="icon-"], [class*="icon-"] {
     font-family: 'icons' !important;
-    speak: never;
+    // speak: never;
     font-style: normal;
     font-weight: normal;
     font-variant: normal;
@@ -23,36 +23,18 @@
     -moz-osx-font-smoothing: grayscale;
   }
   
-  .icon-instagram:before {
+  .icon-github:before {
     content: "\e900";
   }
-  .icon-telegram:before {
+  .icon-instagram:before {
     content: "\e901";
   }
-  .icon-designer:before {
+  .icon-telegram:before {
     content: "\e902";
   }
-  .icon-developer:before {
+  .icon-facebook:before {
     content: "\e903";
   }
-  .icon-courses:before {
+  .icon-arrow-sircle-up:before {
     content: "\e904";
-  }
-  .icon-university:before {
-    content: "\e905";
-  }
-  .icon-mobile:before {
-    content: "\e906";
-  }
-  .icon-design:before {
-    content: "\e907";
-  }
-  .icon-monitor:before {
-    content: "\e908";
-  }
-  .icon-github:before {
-    content: "\e909";
-  }
-  .icon-facebook:before {
-    content: "\e90a";
   }

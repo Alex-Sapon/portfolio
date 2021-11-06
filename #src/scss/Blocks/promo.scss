@@ -5,23 +5,24 @@ $burgerColor: #151812;
     height: 100vh;
     background: url(../img/bg.jpg) 50% / cover no-repeat;
     padding-top: 205px;
-
+    @media (max-width:$md4) {
+        background: url(../img/bg.jpg) 57%/cover no-repeat;
+    }
     &__wrapper {
         max-width: 530px;
     }
-
     &__title {
         margin-top: 9px;
     }
-
     &__btns {
         margin-top: 25px;
+        @media (max-width: $md4) {
+            margin-top: 32px;
+        }
     }
-
     &__btn-bg {
         margin-right: 42px;
     }
-
     &__btn-tr {
         color: inherit;
         font-weight: 700;
@@ -29,7 +30,6 @@ $burgerColor: #151812;
         line-height: 2.1rem;
     }
 }
-
 .sidebar {
     position: absolute;
     top: 224px;
@@ -40,7 +40,6 @@ $burgerColor: #151812;
     &:not(:last-child) > * {
         margin-top: 15px;
     }
-
     &__link {
         font-size: 20px;
         color: $mainColor;
@@ -52,7 +51,6 @@ $burgerColor: #151812;
             transform: rotate(0deg);
         }
     }
-
     &__divider {
         width: 2px;
         height: 70px;
@@ -60,25 +58,28 @@ $burgerColor: #151812;
         transform: rotate(-180deg);
         display: inline-block;
     }
-
     &__title {
         transform: rotate(-180deg);
         display: inline-block;
     }
+    @media (max-width: 1400px) {
+        display: none;
+    }
 }
-
 .hamburger {
     position: absolute;
     height: 21px;
     width: 36px;
     top: 20px;
-    right: 50px;
+    right: 40px;
     cursor: pointer;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-end;
-
+    @media (max-width:$md4) {
+        right: 20px;
+    }
     span {
         display: block;
         width: 30px;
@@ -86,12 +87,10 @@ $burgerColor: #151812;
         background-color: $burgerColor;
         
     }
-
     .hamburger__long {
         width: 36px;
     } 
 }
-
 .menu {
     position: fixed;
     height: 100vh;
@@ -117,6 +116,10 @@ $burgerColor: #151812;
         flex-direction: column;
         justify-content: space-between;
         z-index: 10;
+        @media (max-width:$md4) {
+            width: 250px;
+            padding: 140px 20px 50px 20px;
+        }
     }
     &__close {
         position: absolute;
@@ -126,6 +129,10 @@ $burgerColor: #151812;
         top: 25px;
         right: 25px;
         cursor: pointer;
+        @media (max-width:$md4) {
+            right: 25px;
+            top: 25px;
+        }
     }
     &__link {
         position: relative;
